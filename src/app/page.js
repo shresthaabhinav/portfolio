@@ -18,7 +18,7 @@ export default function Home() {
     <Tech/>
     <div>
       <Contact/>
-      {/* <StarsCanvas/> */}
+      <StarsCanvas/>
     </div>
   </div>
 );
