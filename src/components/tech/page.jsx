@@ -1,19 +1,27 @@
 "use client";
 import { motion, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { SiReact, SiTailwindcss, SiDjango, SiLaravel, SiTypescript, SiNextdotjs, SiMongodb} from "react-icons/si";
+import {
+  SiReact,
+  SiTailwindcss,
+  SiDjango,
+  SiLaravel,
+  SiTypescript,
+  SiNextdotjs,
+  SiMongodb,
+} from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
 
 export default function OurClients() {
   const clients = [
-    {icon: <SiReact />, name: "React"},
-    {icon: <SiMongodb />, name: "Mongodb"},
-    {icon: <SiNextdotjs />, name: "Nextjs"},
-    {icon: <SiTypescript />, name: "Typescript"},
-    {icon: <SiTailwindcss />, name: "Tailwind Css"},
-    {icon: <SiDjango />, name: "Django"},
-    {icon: <DiNodejsSmall />, name: "Node.js"},
-    {icon: <SiLaravel />, name: "Laravel"},
+    { icon: <SiReact />, name: "React" },
+    { icon: <SiMongodb />, name: "Mongodb" },
+    { icon: <SiNextdotjs />, name: "Nextjs" },
+    { icon: <SiTypescript />, name: "Typescript" },
+    { icon: <SiTailwindcss />, name: "Tailwind Css" },
+    { icon: <SiDjango />, name: "Django" },
+    { icon: <DiNodejsSmall />, name: "Node.js" },
+    { icon: <SiLaravel />, name: "Laravel" },
   ];
 
   const repeated = [...clients, ...clients, ...clients];
@@ -40,24 +48,42 @@ export default function OurClients() {
       ([entry]) => {
         setActive(entry.isIntersecting && entry.intersectionRatio > 0.1);
       },
-      { threshold: [0.1] }
+      { threshold: [0.1] },
     );
 
     io.observe(el);
     return () => io.disconnect();
   }, []);
 
-  // Wheel & touch events
+  // Wheel & touch events - optimized with throttling
   useEffect(() => {
     if (!active) return;
 
-    const onWheel = (e) => setDir(e.deltaY > 0 ? -1 : 1);
+    let lastWheelTime = 0;
+    const WHEEL_THROTTLE = 100; // Increased to 100ms to prevent excessive state updates
+
+    const onWheel = (e) => {
+      const now = Date.now();
+      if (now - lastWheelTime < WHEEL_THROTTLE) return;
+
+      lastWheelTime = now;
+      setDir(e.deltaY > 0 ? -1 : 1);
+    };
+
     const onTouchStart = (e) => (touchY.current = e.touches[0].clientY);
+
+    let lastTouchTime = 0;
+    const TOUCH_THROTTLE = 100; // Increased to 100ms
+
     const onTouchMove = (e) => {
+      const now = Date.now();
+      if (now - lastTouchTime < TOUCH_THROTTLE) return;
+
       if (touchY.current == null) return;
       const delta = e.touches[0].clientY - touchY.current;
       setDir(delta > 0 ? 1 : -1);
       touchY.current = e.touches[0].clientY;
+      lastTouchTime = now;
     };
 
     window.addEventListener("wheel", onWheel, { passive: true });
@@ -107,50 +133,50 @@ export default function OurClients() {
     >
       {/* Heading */}
       <motion.h2
-  className="mt-2 text-white text-base sm:text-lg"
-  initial={{ opacity: 0, y: -30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true }}
->
-  Technologies
-</motion.h2>
+        className="mt-2 text-white text-base sm:text-lg"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        Technologies
+      </motion.h2>
 
-<motion.p
-  className="text-4xl mt-2 sm:text-5xl md:text-6xl font-semibold text-white"
-  initial={{ opacity: 0, y: -10 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true }}
->
-  That I am expert in
-</motion.p>
+      <motion.p
+        className="text-4xl mt-2 sm:text-5xl md:text-6xl font-semibold text-white"
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        That I am expert in
+      </motion.p>
 
       {/* Carousel */}
       <div className="relative w-full overflow-hidden mt-4">
         {isClient && (
           <motion.div
-  ref={trackRef}
-  className="flex gap-10"
-  style={{ x, whiteSpace: "nowrap", willChange: "transform" }}
->
-  {repeated.map((s, i) => (
-    <div
-      key={i}
-      className="mt-2 bg-white hover:bg-[#2b2644] hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-4 py-6 border border-zinc-300 min-w-[300px] rounded-xl flex flex-col items-center group cursor-pointer"
-    >
-      <div className="text-6xl text-black group-hover:text-white transition-colors duration-300 mb-4">
-        {s.icon}
-      </div>
+            ref={trackRef}
+            className="flex gap-10"
+            style={{ x, whiteSpace: "nowrap", willChange: "transform" }}
+          >
+            {repeated.map((s, i) => (
+              <div
+                key={i}
+                className="mt-2 bg-white hover:bg-[#2b2644] hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-4 py-6 border border-zinc-300 min-w-[300px] rounded-xl flex flex-col items-center group cursor-pointer"
+              >
+                <div className="text-6xl text-black group-hover:text-white transition-colors duration-300 mb-4">
+                  {s.icon}
+                </div>
 
-      <div className="mt-2 flex flex-col items-center text-center">
-        <p className="text-black group-hover:text-white transition-colors duration-300 text-base font-medium">
-          {s.name}
-        </p>
-      </div>
-    </div>
-  ))}
-</motion.div>
+                <div className="mt-2 flex flex-col items-center text-center">
+                  <p className="text-black group-hover:text-white transition-colors duration-300 text-base font-medium">
+                    {s.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         )}
       </div>
     </section>

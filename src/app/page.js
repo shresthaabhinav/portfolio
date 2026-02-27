@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "../components/navbar/page";
 import Hero from "../components/hero/page";
 import About from "@/components/about/page";
@@ -19,10 +18,8 @@ export default function Home() {
     <Tech/>
     <div>
       <Contact/>
-      <StarsCanvas/>
+      {/* <StarsCanvas/> */}
     </div>
-
   </div>
-
 );
 }

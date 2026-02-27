@@ -33,18 +33,10 @@ export default function Home() {
       <section id="home" className="w-full h-screen relative overflow-hidden">
         <div className="absolute inset-0">
           <div
-            className="absolute -top-32 -left-32 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw]
-            sm:h-[50vw] md:h-[40vw] max-w-[500px] rounded-full bg-gradient-to-r from-[#302b63] via-[#00bf8f]
-            to-[#1cd8d2] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px]
-            animate-pulse"
+            className="absolute -top-32 -left-32 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] rounded-full bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse"
           ></div>
           <div
-            className="absolute bottom-38 right-0 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw]
-            sm:h-[50vw] md:h-[40vw] max-w-[500px] rounded-full
-            bg-gradient-to-r from-[#1e3c72] via-[#2a5298] to-[#4facfe]
-            opacity-30 sm:opacity-20 md:opacity-10
-            blur-[100px] sm:blur-[130px] md:blur-[150px]
-            animate-pulse"
+            className="absolute bottom-38 right-0 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] rounded-full bg-gradient-to-r from-[#1e3c72] via-[#2a5298] to-[#4facfe] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse"
           ></div>
         </div>
 
@@ -53,9 +45,7 @@ export default function Home() {
           <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
             <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
               <motion.div
-                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold 
-             text-transparent bg-clip-text bg-gradient-to-r from-[#00aaff] via-[#0077ff] to-[#0044ff]
-             tracking-wide min-h-[1.6em]"
+                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00aaff] via-[#0077ff] to-[#0044ff] tracking-wide min-h-[1.6em]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -67,8 +57,7 @@ export default function Home() {
                 ></span>
               </motion.div>
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-transparent 
-              bg-clip-text bg-white drop-shadow-lg"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-transparent bg-clip-text bg-white drop-shadow-lg"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}
@@ -96,7 +85,7 @@ export default function Home() {
             {/* Circle container */}
             <div
               className="relative rounded-full flex justify-center items-center"
-              style={{ width: "22rem", height: "22rem" }} 
+              style={{ width: "22rem", height: "22rem" }}
             >
               {/* Animated ring */}
               <div
@@ -134,26 +123,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <style jsx>{`
-        @keyframes pulse-ring {
-          0% {
-            transform: scale(1);
-            opacity: 0.8;
-          }
-          50% {
-            transform: scale(1.1);
-            opacity: 0.4;
-          }
-          100% {
-            transform: scale(1);
-            opacity: 0.8;
-          }
-        }
-
-        .animate-pulse-ring {
-          animation: pulse-ring 2s infinite ease-in-out;
-        }
-      `}</style>
     </>
   );
 }
