@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Reset + Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black text-white;
+}
+
+/* Anchor Offset Helper */
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+/* ================= GRADIENTS ================= */
+
+.black-gradient {
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.violet-gradient {
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+}
+
+.green-pink-gradient {
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+/* ================= TEXT GRADIENTS ================= */
+
+.orange-text-gradient {
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= CANVAS LOADER ================= */
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%, 100% {
+    box-shadow:
+      0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.5),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.7);
+  }
+  12.5% {
+    box-shadow:
+      0em -2.6em 0em 0em rgba(255,255,255,0.7),
+      1.8em -1.8em 0 0em #ffffff,
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.5);
+  }
+  25% {
+    box-shadow:
+      0em -2.6em 0em 0em rgba(255,255,255,0.5),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.7),
+      2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  37.5% {
+    box-shadow:
+      0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.5),
+      2.5em 0em 0 0em rgba(255,255,255,0.7),
+      1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  50% {
+    box-shadow:
+      0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.5),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.7),
+      0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
 }
