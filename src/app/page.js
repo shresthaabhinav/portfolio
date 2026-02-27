@@ -14,8 +14,8 @@ export default function Home() {
     <Hero/>
       </div> 
     <About/> 
-    <Tech/>
     <Experience/>
+    <Tech/>
     <div>
       <Contact/>
       <StarsCanvas/>
