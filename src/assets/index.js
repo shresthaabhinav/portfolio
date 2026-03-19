@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import dav from "./edu/dav.png";
+import prasadi from "./edu/prasadi.png";
+import tribhuvan from "./edu/tu.png";
 
 // import meta from "../../public/img/company/meta.png";
 // import shopify from "../../public/img/company/shopify.png";
@@ -31,6 +34,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  dav,
+  prasadi,
+  tribhuvan,
   logo,
   backend,
   creator,

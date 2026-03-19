@@ -45,7 +45,7 @@ export default function Home() {
           <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
             <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
               <motion.div
-                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00aaff] via-[#0077ff] to-[#0044ff] tracking-wide min-h-[1.6em]"
+                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#A9A9CD] via-[#8888BB] to-[#D3D3DD] tracking-wide min-h-[1.6em]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -107,20 +107,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-          <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-              <motion.div
-                animate={{ y: [0, 24, 0] }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
-                className="w-3 h-3 bg-gray-100 rounded-full bg-secondary mb-1"
-              />
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-50 hidden sm:flex">
+            <style>{`
+                @keyframes scrollDot {
+                    0%, 100% { transform: translateY(0); }
+                    50%       { transform: translateY(12px); }
+                }
+            `}</style>
+            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
+                <div
+                    className="w-1.5 h-1.5 bg-[#8B81BC] rounded-full"
+                    style={{ animation: "scrollDot 1.5s ease-in-out infinite" }}
+                />
             </div>
-          </a>
+            <span className="text-[10px] uppercase tracking-widest text-white font-bold">Scroll Down</span>
         </div>
       </section>
     </>

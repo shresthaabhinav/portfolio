@@ -1,5 +1,6 @@
 import { IoGlobeOutline, IoSettings } from "react-icons/io5";
 import { FaPaintBrush, FaLaptop } from "react-icons/fa";
+import { dav, prasadi, tribhuvan } from "../assets";
 
 import {
   carrent,
@@ -13,8 +14,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -24,24 +25,28 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: IoGlobeOutline,
+    title: "React Developer",
+    image: "/img/react.png",
+    desc: "Developed interactive and responsive web interfaces using React.js and JSX."
   },
   {
-    title: "Frontend Developer",
-    icon: FaPaintBrush,
+    title: "Next.js Developer",
+    image: "/img/next.png",
+    desc: "Implemented routing, API routes and dynamic data fetching with better performance."
   },
   {
-    title: "Backend Developer",
-    icon: IoSettings,
+    title: "Express Developer",
+    image: "/img/express.png",
+    desc: "Developed RESTful APIs and backend services of crud operations using Express.js."
   },
   {
-    title: "FullStack Developer",
-    icon: FaLaptop,
+    title: "MERN Developer",
+    image: "/img/mongodb.png",
+    desc: "Currently Developing & maintaining full-stack web applications using MERN Stack."
   },
 ];
 
-const experiences = [
+const experience = [
   {
     title: "React.js Developer",
     details: "JavaScript Library",
@@ -96,30 +101,53 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const educations = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "School Education (Grade 10)",
+    details: "DAV Sushil Kedia Vishwa Bharati School",
+    image: dav,
+    date: "Completed Grade 10 (2018)",
+    link: "https://davnepal.com/",
+    points: [
+      "Completed secondary level education with a GPA of 3.65.",
+      "Focused on Accounts and Optional Mathematics as major subjects.",
+      "Built strong foundations in mathematics, problem solving, and analytical thinking.",
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "Higher Secondary Education (Grade 11–12)",
+    details: "Prasadi Academy",
+    image: prasadi,
+    date: "+2 in Science Stream (2019-2021)",
+    link: "https://prasadi.edu.np/",
+    points: [
+      "Completed higher secondary education with a GPA of 3.64.",
+      "Studied in the Science stream with focus on analytical and technical subjects.",
+      "Developed strong logical reasoning and scientific problem-solving skills.",
+    ],
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Bachelor's Degree",
+    details: "National College of Computer Studies (NCCS) – Affiliated to Tribhuvan University",
+    image: tribhuvan,
+    link: "https://nccs.edu.np/college",
+    date: "Bachelor of Science in Computer Science and Information Technology (2022-2026)",
+    points: [
+      "Completed Bachelor's degree with 75%.",
+      "Gained knowledge in software development, databases, and programming concepts.",
+      "Worked on academic projects related to web development and software systems.",
+    ],
+  },
+  {
+    title: "Master's Degree",
+    details: "XYZ University",
+    image: dav,
+    date: "Masters of Science in Computer Science (2028 - Present)",
+    points: [
+      "Pursuing a Master's degree in Computer Science.",
+      "Expanding knowledge in advanced software development and system design.",
+      "Working on research and advanced projects related to modern web technologies.",
+    ],
   },
 ];
 
@@ -189,4 +217,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, educations, testimonials, projects };
