@@ -138,17 +138,17 @@ const educations = [
       "Worked on academic projects related to web development and software systems.",
     ],
   },
-  {
-    title: "Master's Degree",
-    details: "XYZ University",
-    image: dav,
-    date: "Masters of Science in Computer Science (2028 - Present)",
-    points: [
-      "Pursuing a Master's degree in Computer Science.",
-      "Expanding knowledge in advanced software development and system design.",
-      "Working on research and advanced projects related to modern web technologies.",
-    ],
-  },
+  // {
+  //   title: "Master's Degree",
+  //   details: "XYZ University",
+  //   image: dav,
+  //   date: "Masters of Science in Computer Science (2028 - Present)",
+  //   points: [
+  //     "Pursuing a Master's degree in Computer Science.",
+  //     "Expanding knowledge in advanced software development and system design.",
+  //     "Working on research and advanced projects related to modern web technologies.",
+  //   ],
+  // },
 ];
 
 const projects = [
