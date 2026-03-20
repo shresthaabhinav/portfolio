@@ -19,12 +19,12 @@ export default function Cubes() {
 
 function Cube() {
   const mesh = useRef(null);
-  const texture_1 = useLoader(TextureLoader, "img/shres.jpg");
-  const texture_2 = useLoader(TextureLoader, "img/shres.jpg");
-  const texture_3 = useLoader(TextureLoader, "img/shres.jpg");
-  const texture_4 = useLoader(TextureLoader, "img/shres.jpg");
-  const texture_5 = useLoader(TextureLoader, "img/shres.jpg");
-  const texture_6 = useLoader(TextureLoader, "img/shres.jpg");
+  const texture_1 = useLoader(TextureLoader, "img/abhi.jpg");
+  const texture_2 = useLoader(TextureLoader, "img/abhi.jpg");
+  const texture_3 = useLoader(TextureLoader, "img/abhi.jpg");
+  const texture_4 = useLoader(TextureLoader, "img/abhi.jpg");
+  const texture_5 = useLoader(TextureLoader, "img/abhi.jpg");
+  const texture_6 = useLoader(TextureLoader, "img/abhi.jpg");
 
   useFrame((state, delta) => {
     if (mesh.current) {
