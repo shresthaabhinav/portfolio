@@ -18,8 +18,8 @@ export const navLinks = [
     title: "Education",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "resume",
+    title: "Resume",
   },
 ];
 

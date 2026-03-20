@@ -10,7 +10,7 @@ export default function Cubes() {
     
   return (
     <div className={styles.main}>
-      <Canvas camera={{ position: [5, 2, 5], fov: 70 }}>
+      <Canvas camera={{ position: [5, 2, 5], fov: 50}}>
         {/* Smooth auto-rotation */}
         <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={1.5} />
 
