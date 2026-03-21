@@ -8,7 +8,7 @@ import { SectionWrapper } from "../../hoc/page";
 import { slideIn } from "../../utils/page";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const CV_URL = "@/assets/cv/abhinav_shresthaCV.pdf";
+const CV_URL = "/public/cv/abhinav_shresthaCV.pdf";
 
 const Resume = () => {
   return (
