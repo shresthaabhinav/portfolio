@@ -65,7 +65,7 @@ export default function Home() {
                 Abhinav
                 <br />
                 <span className="text-white font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl lg:whitespace-nowrap">
-                  Shrestha
+                  Shrestha is a don man !!!!!!
                 </span>
               </motion.h1>
 
