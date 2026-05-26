@@ -99,7 +99,7 @@ export default function Home() {
 
               {/* Inner image */}
               <img
-                src="/img/shres.jpg"
+                src="/img/shres.webp"
                 alt="Avatar"
                 className="rounded-full object-cover shadow-lg"
                 style={{ width: "21.5rem", height: "21.5rem" }}

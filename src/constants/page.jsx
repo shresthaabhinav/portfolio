@@ -3,7 +3,6 @@ import { FaPaintBrush, FaLaptop } from "react-icons/fa";
 import { dav, prasadi, tribhuvan } from "../assets";
 
 import {
-  carrent,
   jobit,
   tripguide,
 } from "../assets";
@@ -26,22 +25,22 @@ export const navLinks = [
 const services = [
   {
     title: "React Developer",
-    image: "/img/react.png",
+    image: "/img/react.webp",
     desc: "Developed interactive and responsive web interfaces using React.js and JSX."
   },
   {
     title: "Next.js Developer",
-    image: "/img/next.png",
+    image: "/img/next.webp",
     desc: "Implemented routing, API routes and dynamic data fetching with better performance."
   },
   {
     title: "Express Developer",
-    image: "/img/express.png",
+    image: "/img/express.webp",
     desc: "Developed RESTful APIs and backend services of crud operations using Express.js."
   },
   {
     title: "MERN Developer",
-    image: "/img/mongodb.png",
+    image: "/img/mongodb.webp",
     desc: "Currently Developing & maintaining full-stack web applications using MERN Stack."
   },
 ];
@@ -50,7 +49,7 @@ const experience = [
   {
     title: "React.js Developer",
     details: "JavaScript Library",
-    icon: "img/react.png",
+    icon: "img/react.webp",
     iconBg: "#383E56",
     date: "Mar 2024 - Dec 2024",
     points: [
@@ -63,7 +62,7 @@ const experience = [
   {
     title: "Next.js Developer",
     details: "React Framework",
-    icon: "/img/next.png",
+    icon: "/img/next.webp",
     iconBg: "#E6DEDD",
     date: "Jan 2025 - May 2025",
     points: [
@@ -76,7 +75,7 @@ const experience = [
   {
     title: "Express.js Developer",
     details: "Backend Framework for Node.js",
-    icon: "img/express.png",
+    icon: "img/express.webp",
     iconBg: "#383E56",
     date: "Jun 2025 - Dec 2025",
     points: [
@@ -89,7 +88,7 @@ const experience = [
   {
     title: "Full Stack Developer",
     details: "MERN Stack",
-    icon: "img/mongodb.png",
+    icon: "img/mongodb.webp",
     iconBg: "#E6DEDD",
     date: "Jan 2026 - Present",
     points: [
@@ -151,70 +150,70 @@ const educations = [
   // },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
+// const projects = [
+//   {
+//     name: "Car Rent",
+//     description:
+//       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "tailwind",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: carrent,
+//     source_code_link: "https://github.com/",
+//   },
+//   {
+//     name: "Job IT",
+//     description:
+//       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "restapi",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "scss",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: jobit,
+//     source_code_link: "https://github.com/",
+//   },
+//   {
+//     name: "Trip Guide",
+//     description:
+//       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+//     tags: [
+//       {
+//         name: "nextjs",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "supabase",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "css",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: tripguide,
+//     source_code_link: "https://github.com/",
+//   },
+// ];
 
 export { services, technologies, educations, testimonials, projects };
