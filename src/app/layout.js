@@ -8,8 +8,15 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Abhinav Shrestha | Dev",
-  description: "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
+  title: "Abhinav Shrestha - Full Stack Developer | Portfolio",
+  description:
+    "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
+
+  metadataBase: new URL("https://abhinav-shrestha.com.np"),
+
+  alternates: {
+    canonical: "https://abhinav-shrestha.com.np",
+  },
 
   openGraph: {
     title: "Abhinav | MERN Stack Developer",
@@ -31,7 +38,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Abhinav Shrestha | Dev",
+    title: "Abhinav Shrestha - Full Stack Developer | Portfolio",
     description:
       "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
     images: ["/img/og_image.webp"],
