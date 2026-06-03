@@ -4,6 +4,7 @@ import About from "@/components/about/page";
 import Education from "@/components/experience/page";
 import Resume from "@/components/resume/page";
 import { StarsCanvas } from "@/components/canvas";
+import Projects from "@/components/projects/page";
 import Tech from "@/components/tech/page";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     <Hero/>
       </div> 
     <About/> 
+    <Projects/>
     <Education/>
     <Tech/>
     <div>
