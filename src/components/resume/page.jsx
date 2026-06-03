@@ -52,7 +52,7 @@ const Resume = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-fit relative overflow-hidden px-8 py-3 font-semibold text-white rounded-lg border-2 border-[#8B81BC] bg-transparent before:absolute before:top-0 before:left-[-100%] before:h-full before:w-full before:bg-[#8B81BC] before:z-0 before:transition-all before:duration-500 hover:before:left-0 transition-colors duration-300 flex items-center gap-2"
+            className="w-fit relative overflow-hidden px-8 py-3 font-semibold text-white rounded-lg border-2 border-[#0266A5] bg-transparent before:absolute before:top-0 before:left-[-100%] before:h-full before:w-full before:bg-[#0266A5] before:z-0 before:transition-all before:duration-500 hover:before:left-0 transition-colors duration-300 flex items-center gap-2"
           >
             <MdOutlineFileDownload className="relative z-10 text-xl" />
             <span className="relative z-10">Download CV</span>

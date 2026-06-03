@@ -45,7 +45,7 @@ export default function Home() {
           <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
             <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
               <motion.div
-                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#A9A9CD] via-[#8888BB] to-[#D3D3DD] tracking-wide min-h-[1.6em]"
+                className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#6CC3FA] via-[#319ADB] to-[#319ADB] tracking-wide min-h-[1.6em]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -116,7 +116,7 @@ export default function Home() {
             `}</style>
             <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
                 <div
-                    className="w-1.5 h-1.5 bg-[#8B81BC] rounded-full"
+                    className="w-1.5 h-1.5 bg-[#319ADB] rounded-full"
                     style={{ animation: "scrollDot 1.5s ease-in-out infinite" }}
                 />
             </div>

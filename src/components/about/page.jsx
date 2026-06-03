@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, image, desc}) => (
   <Tilt className="xs:w-[250px] w-full" tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.05} transitionSpeed={450}>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full bg-gradient-to-r from-[#2B2644] via-[#403964] to-[#8B81BC] p-[2px] rounded-[8px] shadow-lg hover:shadow-xl transition-shadow duration-300"
+      className="w-full bg-gradient-to-r from-[#0A2540] via-[#053654] to-[#319ADB] p-[2px] rounded-[8px] shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <div className="bg-tertiary rounded-[20px] py-8 px-6 min-h-[280px] flex flex-col items-center justify-center gap-6">
         <div className="w-24 h-24 flex items-center justify-center rounded-full bg-white/80 shadow-md">

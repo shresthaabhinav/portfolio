@@ -163,7 +163,7 @@ export default function OurClients() {
             {repeated.map((s, i) => (
               <div
                 key={i}
-                className="mt-2 bg-white hover:bg-[#2b2644] hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-4 py-6 border border-zinc-300 min-w-[300px] rounded-xl flex flex-col items-center group cursor-pointer"
+                className="mt-2 bg-white hover:bg-[#0A2540] hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-4 py-6 border border-zinc-300 min-w-[300px] rounded-xl flex flex-col items-center group cursor-pointer"
               >
                 <div className="text-6xl text-black group-hover:text-white transition-colors duration-300 mb-4">
                   {s.icon}
