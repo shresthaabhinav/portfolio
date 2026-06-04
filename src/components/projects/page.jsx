@@ -7,36 +7,36 @@ import Image from "next/image";
 import { textVariant } from "../../utils/page";
 import { styles } from "../../styles/page";
 import { SectionWrapper } from "../../hoc/page";
-
+import { projects } from "../../constants/page";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
 
-const items = [
-  {
-    id: 1,
-    title: "Locus Enterprises Pvt Ltd",
-    src: "/project/locus.png",
-    link: "https://locusenterprises.com.np",
-    desc: "Business website built for Locus Enterprises with modern UI and responsive design.",
-  },
-  {
-    id: 2,
-    title: "Conceptual Frame Solutions",
-    src: "/project/cfs.png",
-    link: "https://conceptualframe.com",
-    desc: "Creative agency website for Conceptual Frame Solutions with modern UI and responsive design.",
-  },
-  {
-    id: 3,
-    title: "Personal Portfolio",
-    src: "/project/abhinav.png",
-    link: "https://abhinav-shrestha.com.np",
-    desc: "My personal portfolio website built using Next.js.",
-  },
-];
+// const items = [
+//   {
+//     id: 1,
+//     title: "Locus Enterprises Pvt Ltd",
+//     src: "/project/locus.png",
+//     link: "https://locusenterprises.com.np",
+//     desc: "Business website built for Locus Enterprises with modern UI and responsive design.",
+//   },
+//   {
+//     id: 2,
+//     title: "Conceptual Frame Solutions",
+//     src: "/project/cfs.png",
+//     link: "https://conceptualframe.com",
+//     desc: "Creative agency website for Conceptual Frame Solutions with modern UI and responsive design.",
+//   },
+//   {
+//     id: 3,
+//     title: "Personal Portfolio",
+//     src: "/project/abhinav.png",
+//     link: "https://abhinav-shrestha.com.np",
+//     desc: "My personal portfolio website built using Next.js.",
+//   },
+// ];
 
 const Projects = () => {
   return (
@@ -53,7 +53,7 @@ const Projects = () => {
       <div className="w-full mt-20">
         <Carousel opts={{ loop: true, align: "start" }} className="w-full">
           <CarouselContent className="-ml-4">
-            {items.map((item) => (
+            {projects.map((item) => (
               <CarouselItem
                 key={item.id}
                 className="pl-4 basis-[85%] md:basis-[48%] lg:basis-[42%]"
