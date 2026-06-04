@@ -14,30 +14,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-// const items = [
-//   {
-//     id: 1,
-//     title: "Locus Enterprises Pvt Ltd",
-//     src: "/project/locus.png",
-//     link: "https://locusenterprises.com.np",
-//     desc: "Business website built for Locus Enterprises with modern UI and responsive design.",
-//   },
-//   {
-//     id: 2,
-//     title: "Conceptual Frame Solutions",
-//     src: "/project/cfs.png",
-//     link: "https://conceptualframe.com",
-//     desc: "Creative agency website for Conceptual Frame Solutions with modern UI and responsive design.",
-//   },
-//   {
-//     id: 3,
-//     title: "Personal Portfolio",
-//     src: "/project/abhinav.png",
-//     link: "https://abhinav-shrestha.com.np",
-//     desc: "My personal portfolio website built using Next.js.",
-//   },
-// ];
-
 const Projects = () => {
   return (
     <>
