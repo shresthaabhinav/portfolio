@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Abhinav Portfolio",
     images: [
       {
-        url: "/img/og_image.webp",
+        url: "/project/og_image.png",
         width: 1200,
         height: 630,
         alt: "Abhinav Portfolio",
@@ -42,7 +42,7 @@ export const metadata = {
     title: "Abhinav Shrestha - Full Stack Developer | Portfolio",
     description:
       "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
-    images: ["/img/og_image.webp"],
+    images: ["/project/og_image.png"],
   },
 };
 
