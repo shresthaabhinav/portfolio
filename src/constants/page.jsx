@@ -160,7 +160,7 @@ const educations = [
     link: "https://nccs.edu.np/college",
     date: "Bachelor of Science in Computer Science and Information Technology (2022-2026)",
     points: [
-      "Completed Bachelor's degree with 75%.",
+      "Completed Bachelor's degree with 76%.",
       "Gained knowledge in software development, databases, and programming concepts.",
       "Worked on academic projects related to web development and software systems.",
     ],
