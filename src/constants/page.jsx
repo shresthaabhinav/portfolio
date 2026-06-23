@@ -55,14 +55,14 @@ const projects = [
     title: "Locus Enterprises Pvt Ltd",
     src: "/project/locus.webp",
     link: "https://locusenterprises.com.np",
-    desc: "Business website built for Locus Enterprises with modern UI and responsive design.",
+    desc: "Business website built for Locus Enterprises Pvt Ltd with modern UI and responsive design.",
   },
   {
     id: 2,
     title: "Conceptual Frame Solutions",
     src: "/project/cfs.webp",
     link: "https://conceptualframe.com",
-    desc: "Creative agency website for Conceptual Frame Solutions with modern UI and responsive design.",
+    desc: "Business website for Conceptual Frame Solutions Pvt Ltd with modern UI and responsive design.",
   },
   {
     id: 3,
@@ -76,7 +76,14 @@ const projects = [
     title: "Personal Portfolio",
     src: "/project/abhinav.webp",
     link: "https://abhinav-shrestha.com.np",
-    desc: "My personal portfolio website built using Next.js.",
+    desc: "My personal portfolio website which has my contacts and information built using Next.js.",
+  },
+  {
+    id: 5,
+    title: "Book Recommendation System",
+    src: "/project/kitabPasal.webp",
+    link: "https://github.com/shresthaabhinav?tab=repositories",
+    desc: "This is my final year project built using the MERN stack with an integrated AI-based recommendation system using Python",
   },
 ];
 
