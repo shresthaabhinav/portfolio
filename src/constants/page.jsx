@@ -66,6 +66,13 @@ const projects = [
   },
   {
     id: 3,
+    title: "Employee Management System",
+    src: "/project/ems.webp",
+    link: "https://employee-management-system-abhinav.vercel.app/",
+    desc: "My personal web application used to manage employee-related information and workplace operations built using MERN stack.",
+  },
+  {
+    id: 4,
     title: "Personal Portfolio",
     src: "/project/abhinav.webp",
     link: "https://abhinav-shrestha.com.np",
