@@ -73,16 +73,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Personal Portfolio",
-    src: "/project/abhinav.webp",
-    link: "https://abhinav-shrestha.com.np",
-    desc: "My personal portfolio website which has my contacts and information built using Next.js.",
-  },
-  {
-    id: 5,
     title: "Book Recommendation System",
     src: "/project/kitabPasal.webp",
-    link: "https://github.com/shresthaabhinav?tab=repositories",
+    link: "https://github.com/shresthaabhinav/Kitab_Pasal",
     desc: "This is my final year project built using the MERN stack with an integrated AI-based recommendation system using Python",
   },
 ];
