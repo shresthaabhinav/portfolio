@@ -29,23 +29,24 @@ const ServiceCard = ({ index, title, image, desc}) => (
 
 const About = () => (
   <>
-    <motion.div variants={textVariant()}>
+    <motion.div variants={textVariant()} className="text-center">
       <p className={styles.sectionSubText}>Introduction</p>
       <h2 className={styles.sectionHeadText}>Overview.</h2>
     </motion.div>
 
     <motion.p
       variants={fadeIn("", "", 0.1, 1)}
-      className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center mx-auto"
     >
-      I'm a software developer with experience in JavaScript, and expertise in frameworks like React.js, Next.js, Express.js, Node.js and Mongodb.
+      I'm a software developer with experience in JavaScript, and expertise in
+      frameworks like React.js, Next.js, Express.js, Node.js and Mongodb.
     </motion.p>
 
-   <div className="mt-20 flex flex-col md:flex-row flex-wrap md:flex-nowrap gap-10 justify-center overflow-x-auto md:overflow-x-visible">
-  {services.map((service, index) => (
-    <ServiceCard key={service.title} index={index} {...service} />
-  ))}
-</div>
+    <div className="mt-20 flex flex-col md:flex-row flex-wrap md:flex-nowrap gap-10 justify-center overflow-x-auto md:overflow-x-visible">
+      {services.map((service, index) => (
+        <ServiceCard key={service.title} index={index} {...service} />
+      ))}
+    </div>
   </>
 );
 
