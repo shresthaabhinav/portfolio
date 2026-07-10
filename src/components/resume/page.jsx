@@ -8,7 +8,7 @@ import { SectionWrapper } from "../../hoc/page";
 import { slideIn } from "../../utils/page";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const CV_URL = "/cv/abhinav_shresthaCV.pdf";
+const CV_URL = "/cv/Abhinav_Shrestha_CV.pdf";
 
 const Resume = () => {
   return (
@@ -27,7 +27,6 @@ const Resume = () => {
 
       {/* Main layout */}
       <div className="xl:mt-4 flex xl:flex-row flex-col gap-10 overflow-hidden">
-
         {/* Left — CV download */}
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -66,7 +65,6 @@ const Resume = () => {
         >
           <Cube />
         </motion.div>
-
       </div>
     </>
   );
