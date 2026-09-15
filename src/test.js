@@ -1,4 +1,5 @@
 import "./globals.css";
+
 import { Poppins } from "next/font/google";
 import LenisProvider from "@/components/LenisProvider";
 
@@ -7,6 +8,7 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-poppins",
 });
+
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -191,7 +193,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en">
       <body>
         <LenisProvider>{children}</LenisProvider>
 
