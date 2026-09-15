@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // output: "export",
   trailingSlash: true, // optional but recommended for static hosting
   images: {
     unoptimized: true, // required for static export
