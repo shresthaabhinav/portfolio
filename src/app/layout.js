@@ -114,7 +114,7 @@ export const metadata = {
   },
 
   description:
-    "Abhinav Shrestha is a full-stack developer building production web applications end to end — role-based access systems, payment integrations, and ML-driven recommendation features using React, Next.js, Node.js, and Laravel.",
+    "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
 
   keywords: [
     "Abhinav Shrestha",
