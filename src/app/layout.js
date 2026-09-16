@@ -12,7 +12,7 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Abhinav Shrestha",
-  url: "https://abhinav-shrestha.com.np",
+  url: "https://www.abhinav-shrestha.com.np",
   jobTitle: "Full Stack Developer",
   email: "mailto:shresthaabhinav5@gmail.com",
   description:
@@ -93,19 +93,19 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "Abhinav Shrestha",
   alternateName: "Abhinav Shrestha Portfolio",
-  url: "https://abhinav-shrestha.com.np",
+  url: "https://www.abhinav-shrestha.com.np",
   description:
     "Portfolio and personal website of Abhinav Shrestha, a full-stack developer specializing in React/Next.js, Node.js/Express, Laravel, and end-to-end web application development.",
   publisher: {
     "@type": "Person",
     name: "Abhinav Shrestha",
-    url: "https://abhinav-shrestha.com.np",
+    url: "https://www.abhinav-shrestha.com.np",
   },
 };
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  metadataBase: new URL("https://abhinav-shrestha.com.np"),
+  metadataBase: new URL("https://www.abhinav-shrestha.com.np"),
 
   title: {
     default:
@@ -142,7 +142,7 @@ export const metadata = {
   category: "technology",
 
   alternates: {
-    canonical: "https://abhinav-shrestha.com.np",
+    canonical: "https://www.abhinav-shrestha.com.np",
   },
 
   robots: {
@@ -161,7 +161,7 @@ export const metadata = {
     title: "Abhinav | MERN Stack Developer",
     description:
       "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
-    url: "https://abhinav-shrestha.com.np/",
+    url: "https://www.abhinav-shrestha.com.np/",
     siteName: "Abhinav Portfolio",
     images: [
       {

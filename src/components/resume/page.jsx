@@ -27,18 +27,18 @@ const Resume = () => {
 
       {/* Main layout */}
       <div className="xl:mt-4 flex xl:flex-row flex-col gap-10 overflow-hidden">
-        {/* Left — CV download */}
+        {/* Left — CV download (shown second on mobile, first on desktop) */}
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="xl:flex-[0.75] w-full bg-black-100 p-8 rounded-2xl flex flex-col justify-center gap-6"
+          className="order-2 xl:order-1 xl:flex-[0.75] w-full bg-black-100 p-8 rounded-2xl flex flex-col justify-center gap-6"
         >
-          <div>
+          <div className="text-center xl:text-left">
             <p className={styles.sectionSubText}>Also do check out my</p>
             <h3 className={styles.sectionHeadText}>Resume</h3>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <p className="text-secondary text-[14px] leading-[28px]">
+          <div className="flex flex-col gap-2 items-center xl:items-start">
+            <p className="text-secondary text-[14px] leading-[28px] text-center xl:text-left">
               Everything about me
             </p>
           </div>
@@ -51,17 +51,17 @@ const Resume = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-fit relative overflow-hidden px-8 py-3 font-semibold text-white rounded-lg border-2 border-[#0266A5] bg-transparent before:absolute before:top-0 before:left-[-100%] before:h-full before:w-full before:bg-[#0266A5] before:z-0 before:transition-all before:duration-500 hover:before:left-0 transition-colors duration-300 flex items-center gap-2"
+            className="w-fit mx-auto xl:mx-0 relative overflow-hidden px-8 py-3 font-semibold text-white rounded-lg border-2 border-[#0266A5] bg-transparent before:absolute before:top-0 before:left-[-100%] before:h-full before:w-full before:bg-[#0266A5] before:z-0 before:transition-all before:duration-500 hover:before:left-0 transition-colors duration-300 flex items-center gap-2"
           >
             <MdOutlineFileDownload className="relative z-10 text-xl" />
             <span className="relative z-10">Download CV</span>
           </motion.a>
         </motion.div>
 
-        {/* Right — Cube canvas */}
+        {/* Right — Cube canvas (shown first on mobile, second on desktop) */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 w-full h-[300px] sm:h-[400px] md:h-[500px] xl:h-[550px]"
+          className="order-1 xl:order-2 xl:flex-1 w-full h-[300px] sm:h-[400px] md:h-[500px] xl:h-[550px]"
         >
           <Cube />
         </motion.div>

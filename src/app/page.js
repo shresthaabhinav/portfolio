@@ -6,6 +6,7 @@ import Resume from "@/components/resume/page";
 import { StarsCanvas } from "@/components/canvas";
 import Projects from "@/components/projects/page";
 import Tech from "@/components/tech/page";
+import Footer from "@/components/footer/page";
 
 export default function Home() {
   return(
@@ -22,6 +23,7 @@ export default function Home() {
       <Resume/>
       {/* <StarsCanvas/> */}
     </div>
+    <Footer/>
   </div>
 );
 }
