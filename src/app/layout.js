@@ -132,7 +132,7 @@ export const metadata = {
   authors: [
     {
       name: "Abhinav Shrestha",
-      url: "https://abhinav-shrestha.com.np",
+      url: "https://www.abhinav-shrestha.com.np",
     },
   ],
 

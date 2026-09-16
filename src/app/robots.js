@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://abhinav-shrestha.com.np";
+  const baseUrl = "https://www.abhinav-shrestha.com.np";
 
   return {
     rules: {
