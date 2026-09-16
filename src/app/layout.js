@@ -191,8 +191,17 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
-    apple: "/icon.png",
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -200,6 +209,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body>
+
         <LenisProvider>{children}</LenisProvider>
 
         {/* Person Schema */}
