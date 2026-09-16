@@ -157,6 +157,13 @@ export const metadata = {
     },
   },
 
+  sameAs: [
+    "https://www.facebook.com/shrestha.abhinav.5",
+    "https://github.com/shresthaabhinav",
+    "https://www.linkedin.com/in/shrestha-abhinav",
+  ],
+  email: "mailto:shresthaabhinav5@gmail.com",
+
   openGraph: {
     title: "Abhinav | MERN Stack Developer",
     description:
