@@ -189,7 +189,7 @@ export const metadata = {
       "Portfolio of Abhinav, a MERN Stack Developer building modern full-stack web applications.",
     images: ["/project/og_image.png"],
   },
-
+  manifest: "/site.webmanifest",
   icons: {
     icon: [
       {
@@ -197,11 +197,24 @@ export const metadata = {
         type: "image/x-icon",
       },
       {
-        url: "/favicon.svg",
-        type: "image/svg+xml",
+        url: "/favicon-16x16.png",
+        type: "image/png",
+        sizes: "16x16",
+      },
+      {
+        url: "/favicon-32x32.png",
+        type: "image/png",
+        sizes: "32x32",
       },
     ],
-    apple: "/apple-touch-icon.png",
+
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 };
 
@@ -209,7 +222,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body>
-
         <LenisProvider>{children}</LenisProvider>
 
         {/* Person Schema */}
